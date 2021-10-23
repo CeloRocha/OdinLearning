@@ -2,6 +2,7 @@ body{
     background: linear-gradient(60deg, hsl(50, 75%, 50%), hsl(50, 100%, 80%), hsl(50, 75%, 50%));
     color: black;
     text-decoration: none;
+    height: max-content;
 }
 h1{
     font-family: Georgia, monospace;
@@ -50,5 +51,41 @@ ul{
 
 .recipeCard:hover{
     transform: scale(1.1);
-    box-shadow: 0px 1px, 1px 1px hsl(50, 75%, 25%);
+    box-shadow: 0px 1px 1px 1px hsl(50, 75%, 25%);
+}
+
+
+.circle{
+    margin: auto;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(50, 75%, 60%);
+    box-shadow: 0px 0px 5px 5px hsl(50, 75%, 25%);
+}
+.tela{
+    padding: 0;
+    position: fixed;
+    width: 120%;
+    height: 120%;
+    margin: auto;
+    opacity: 1;
+    margin-top: -10%;
+    margin-left: -10%;
+    background-color: black;
+    animation-name: loads;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+    
+}
+@keyframes loads {
+    99%{
+        opacity: 0;
+    }
+    100%{
+        z-index: -1;
+        opacity: 0;
+    }
 }
