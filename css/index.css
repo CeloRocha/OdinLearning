@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(60deg, hsl(50, 75%, 50%), hsl(50, 100%, 80%), hsl(50, 75%, 50%));
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-family: Georgia, monospace;
+    text-align: center;
+}
+
+ul{
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.recipeBox{
+    margin: auto;
+    width: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blanchedalmond;
+    box-shadow: 0px 10px 10px 5px hsl(0, 100%, 25%);
+}
+
+.recipeCard{
+    height: 300px;
+    position: relative;
+    padding-top: 10px;
+    color: black;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, hsl(50, 75%, 50%), hsl(50, 100%, 80%));
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 7px 7px 5px hsl(50, 75%, 25%), 0px 10px 10px 5px hsl(50, 75%, 45%);
+    transition: 0.5s ease;
+}
+
+.recipeCard > hr{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.recipeCard > img{
+    width: 200px;
+    margin: center;
+}
+
+.recipeCard:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px, 1px 1px hsl(50, 75%, 25%);
+}
